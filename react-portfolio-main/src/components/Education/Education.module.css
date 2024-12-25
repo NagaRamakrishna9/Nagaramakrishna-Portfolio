@@ -44,13 +44,16 @@
   background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
   border-radius: 12px;
   padding: 20px;
-  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transform: perspective(800px) rotateX(0deg) translateY(0px) translateZ(0px); /* Reset to a stable position */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Softer shadow for a modern look */
 }
 
 .educationItem:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: perspective(800px) rotateX(10deg) translateY(-10px) translateZ(10px); /* Add a subtle 3D hover effect */
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
 }
+
 
 /* Image in the education item */
 .educationItem img {
