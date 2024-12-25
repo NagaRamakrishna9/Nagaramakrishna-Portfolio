@@ -1,0 +1,18 @@
+[
+  {
+    "role": "Associate technical Consultant",
+    "organisation": "Inflexion infotech pvt ltd",
+    "startDate": "Nov, 2024",
+    "endDate": "Present",
+    "experiences": ["Working as fullstack devoloper", ""],
+    "imageSrc": "history/inflexion.png"
+  },
+  {
+    "role": "fullstack developer intern",
+    "organisation": "Kairos technologies",
+    "startDate": "March, 2024",
+    "endDate": "Jun, 2024",
+    "experiences": ["Worked on Windows 11", "Designed the control panel"],
+    "imageSrc": "history/microsoft.png"
+  }
+]

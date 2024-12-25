@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Employe Management System",
+    "imageSrc": "projects/project.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["Java", "SpringBoot", "MySql"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/NagaRamakrishna9/Employees-Management"
+  },
+  {
+    "title": "Sap UI5 Fullstack Project",
+    "imageSrc": "projects/project.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["Sap ui5", "Java", "Springboot"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "My Portfolio",
+    "imageSrc": "projects/project.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["javaScript", "React Js"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  }
+]

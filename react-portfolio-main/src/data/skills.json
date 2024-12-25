@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Java",
+    "category": "Backend",
+    "imageSrc": "skills/java.png"
+  },
+  {
+    "title": "Spring Boot",
+    "category": "Backend",
+    "imageSrc": "skills/icons8-spring-boot-48.png"
+  },
+  {
+    "title": "HTML",
+    "category": "Frontend",
+    "imageSrc": "skills/html.png"
+  },
+  {
+    "title": "CSS",
+    "category": "Frontend",
+    "imageSrc": "skills/css.png"
+  },
+  {
+    "title": "JavaScript",
+    "category": "Frontend",
+    "imageSrc": "skills/js.png"
+  },
+  {
+    "title": "React",
+    "category": "Frontend",
+    "imageSrc": "skills/react.png"
+  },
+ 
+  {
+    "title": "MySQL",
+    "category": "Backend",
+    "imageSrc": "skills/mysql-database.png"
+  },
+  {
+    "title": "GitHub",
+    "category": "Others",
+    "imageSrc": "skills/github.png"
+  },
+  {
+    "title": "Post Man",
+    "category": "Others",
+    "imageSrc": "skills/Postman.png"
+  },
+  {
+    "title": "VS Code",
+    "category": "Others",
+    "imageSrc": "skills/vscode.png"
+  },
+  {
+    "title": "Apache Maven",
+    "category": "Others",
+    "imageSrc": "skills/Apache Maven.png"
+  }
+]

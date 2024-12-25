@@ -1,0 +1,28 @@
+[
+    {
+      "degree": "Bachelors of Technology",
+      "institution": "sasi institute of technology & engineering",
+      "Description":"I have completed my B.Tech in Information Technology, gaining expertise in software development, database management, and web technologies.",
+      "startDate": "2019",
+      "endDate": "2023",
+      "imageSrc": "education/btech2.png",
+      "courses": ["I have completed my B.Tech in Information Technology, gaining expertise in software development, database management, and web technologies."]
+    },
+    {
+      "degree": "Intermediate",
+      "institution": "Sasi Junior College",
+      "startDate": "2017",
+      "endDate": "2019",
+      "imageSrc": "education/inter2.png",
+      "courses": ["MPC"]
+    },
+    {
+        "degree": "School",
+        "institution": "Zilla Parishath High School",
+        "startDate": "2016",
+        "endDate": "2017",
+        "imageSrc": "education/school.png",
+        "courses": ["MPC"]
+      }
+  ]
+  
