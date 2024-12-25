@@ -45,20 +45,39 @@
   font-weight: 400;
   letter-spacing: 1.5px;
 }
-
-@media screen and (max-width: 830px) {
+@media only screen and (max-width: 768px) {
   .container {
-    flex-direction: column;
-    gap: 23px;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align all items */
+    margin-top: 80px; /* Adjust top margin */
+    padding: 30px 5%; /* Reduce padding for smaller screens */
+    gap: 20px; /* Add space between stacked elements */
+    width: 100%; /* Ensure container fits the viewport */
   }
 
-  .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .text h2 {
+    font-size: 40px; /* Reduce font size for mobile */
+    text-align: center; /* Center-align text */
+    letter-spacing: 2px; /* Adjust letter spacing */
+  }
+
+  .text p {
+    font-size: 20px; /* Reduce paragraph font size */
+    text-align: center; /* Center-align text */
+    letter-spacing: 1px; /* Adjust letter spacing */
   }
 
   .links {
-    align-items: center;
+    align-items: center; /* Center-align links */
+    gap: 15px; /* Reduce gap between links */
+  }
+
+  .link {
+    gap: 15px; /* Reduce gap between icon and text */
+  }
+
+  .link a {
+    font-size: 18px; /* Reduce font size for links */
+    letter-spacing: 1px; /* Adjust letter spacing */
   }
 }

@@ -20,7 +20,7 @@
     "imageSrc": "projects/project.png",
     "description": "This is a project made to learn the latest languages by building an app.",
     "skills": ["javaScript", "React Js"],
-    "demo": "https://www.example.com",
+    "demo": "https://nagaramakrishnamale.netlify.app",
     "source": "https://github.com/NagaRamakrishna9/Nagaramakrishna-Portfolio"
   }
 ]

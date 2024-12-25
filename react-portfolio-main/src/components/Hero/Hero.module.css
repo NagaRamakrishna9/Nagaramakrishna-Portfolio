@@ -128,12 +128,62 @@ box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
   z-index: 0;
 }
 
-@media screen and (max-width: 830px) {
+@media only screen and (max-width: 768px) {
   .container {
-    flex-direction: column-reverse;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    margin-top: 100px; /* Adjust top margin for smaller screens */
+    margin-left: 5%; /* Reduced margin for better fit */
+    margin-right: 5%;
+    padding: 15px; /* Add padding for better spacing */
   }
 
   .content {
-    align-items: center;
+    align-items: center; /* Center-align content */
+    text-align: center; /* Center text alignment */
+  }
+
+  .title {
+    font-size: 32px; /* Reduce title font size */
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 18px; /* Reduce description font size */
+    margin-bottom: 30px;
+  }
+
+  .buttonContainer {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px; /* Reduced gap for smaller screens */
+  }
+
+  .contactBtn, .resumeBtn {
+    font-size: 20px; /* Reduce button font size */
+    padding: 12px 20px; /* Adjust button padding */
+    width: 100%; /* Make buttons full-width */
+    text-align: center;
+  }
+
+  .heroImg {
+    width: 60%; /* Scale image for mobile */
+    margin-top: 20px; /* Add spacing above the image */
+  }
+
+  .topBlur, .bottomBlur {
+    width: 70vw; /* Adjust blur size for smaller screens */
+    height: 70vw;
+    filter: blur(80px); /* Adjust blur intensity */
+  }
+
+  .topBlur {
+    top: -100px; /* Adjust position for smaller screens */
+    left: -20vw;
+  }
+
+  .bottomBlur {
+    top: 300px; /* Adjust position for smaller screens */
+    right: -15vw;
   }
 }
+

@@ -20,15 +20,15 @@
 .skillCard {
   background-color: rgb(10, 1, 28);
   border-radius: 20px;
-  padding: 20px;
+  padding: 30px;
   width: 30%;
-  box-shadow: 0 4px 6px rgba(239, 4, 102, 0.1);
+  box-shadow: 0 4px 60px rgba(239, 4, 102, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
 }
 
 .skillCard h3 {
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 35px;
   color: #ffffff; /* Change the card title color */
 }
 
@@ -47,7 +47,7 @@
 }
 
 .skillImageContainer img {
-  width: 75px;
+  width: 55px;
 }
 
 .skill p {
@@ -57,19 +57,57 @@
 
 /* Skill card hover effect */
 .skillCard:hover {
-  transform: translateX(-10px); /* Slight shift on hover */
+  transform: translateX(-20px); /* Slight shift on hover */
   box-shadow: 0 6px 12px rgba(239, 4, 102, 0.2); /* Enhanced shadow on hover */
 }
 
 /* Responsive Design - For smaller screens */
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+
+  .title {
+    font-size: 1.5em; /* Smaller font size for mobile */
+    margin-bottom: 20px;
+  }
+
+  .content {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Reduced gap for better spacing */
+  }
+
   .skillCard {
-    width: 45%; /* Increase width for medium screens */
+    width: 100%; /* Make skill cards take full width */
+    padding: 15px; /* Reduce padding for better fit */
+  }
+
+  .skillCard h3 {
+    font-size: 1.2em; /* Adjust font size for mobile readability */
+  }
+
+  .skills {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Adjust grid for smaller icons */
+    gap: 8px; /* Reduced gap between skills */
+  }
+
+  .skill {
+    padding: 10px; /* Reduce padding for better layout */
+  }
+
+  .skillImageContainer img {
+    width: 20px; /* Smaller icons for mobile view */
+  }
+
+  .skill p {
+    font-size: 0.9em; /* Slightly smaller text */
+  }
+
+  /* Optional: Adjust hover effects for better touch experience */
+  .skillCard:hover {
+    transform: none; /* Remove hover shift for touch devices */
+    box-shadow: 0 4px 8px rgba(239, 4, 102, 0.15); /* Subtle shadow */
   }
 }
 
-@media screen and (max-width: 480px) {
-  .skillCard {
-    width: 100%; /* Full-width cards on small screens */
-  }
-}
+
