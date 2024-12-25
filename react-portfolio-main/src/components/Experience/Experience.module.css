@@ -3,95 +3,135 @@
 /* Container styling */
 .container {
   color: var(--color-text);
-  margin: 100px auto; /* Center horizontally and adjust vertical margin */
-  padding: 0; /* Add padding for consistent spacing */
-  max-width: 1200px; /* Limit the width for better readability on larger screens */
+  margin-top: 79px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 /* Title styling */
 .title {
-  color: var(--color-primary);
+  color: var(--color-text);
   font-size: 35px;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.75px;
   text-transform: uppercase;
-  text-align: left; /* Align title to the left for balance */
-  margin-bottom: 20px;
 }
 
 /* Content container styling */
 .content {
   display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-top: 16px;
-}
-
-/* History section styling */
-.history {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-/* Individual history item styling */
-.historyItem {
-  display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-top: 14px;
+}
+
+/* Skills section styling */
+.skills {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 37px;
+}
+
+/* Skill card styling */
+.skillCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
-  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
+  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%); /* Gradient background */
   border-radius: 12px;
   padding: 20px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   transform: perspective(800px) rotateX(0deg) translateY(0px) translateZ(0px); /* Stable position */
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Softer shadow for modern look */
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5); /* Softer shadow for modern look */
 }
 
-.historyItem:hover {
-  transform: perspective(800px) rotateX(10deg) translateY(-10px) translateZ(10px); /* Subtle 3D hover effect */
-  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+.skillCard:hover {
+  transform: perspective(800px) rotateX(10deg) translateY(-10px) translateZ(10px); /* Add 3D hover effect */
+  box-shadow: 0px 25px 70px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
 }
 
-/* Image in the history item */
-.historyItem img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 50%; /* Circular image */
-  background: #ffffff; /* Contrast background */
-  padding: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Skill card image container */
+.skillImageContainer {
+  background-color: var(--color-secondary);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
 }
 
-/* History item details */
-.historyItemDetails {
+/* Skill card image styling */
+.skillImageContainer img {
+  width: 75px;
+}
+
+/* Skill card description text styling */
+.skill p {
+  font-size: 25px;
   font-family: var(--font-roboto);
+  font-weight: 500;
+}
+
+/* History section styling */
+.history {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 40px;
 }
 
+/* History item styling */
+.historyItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 17px;
+  background: #19376d;
+  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%); /* Gradient background */
+  border-radius: 10px;
+  padding: 24px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5); /* Softer shadow */
+}
+
+/* History item hover effect */
+.historyItem:hover {
+  transform: translateY(-10px); /* Elevate the item on hover */
+  box-shadow: 0px 25px 70px rgba(0, 0, 0, 0.6); /* Enhanced shadow */
+}
+
+/* History item image */
+.historyItem img {
+  width: 50px;
+}
+
+/* History item details styling */
+.historyItemDetails {
+  font-family: var(--font-roboto);
+}
+
+/* History item title */
 .historyItemDetails h3 {
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 6px;
-  color: var(--color-primary-light);
+  font-size: 30px;
+  font-weight: 500;
 }
 
+/* History item description */
 .historyItemDetails p {
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 6px;
-  color: var(--color-text-light);
+  font-size: 20px;
+  font-weight: 300;
 }
 
+/* History item list styling */
 .historyItemDetails ul {
-  margin-top: 10px;
-  padding-left: 18px;
-  font-size: 18px;
-  font-weight: 300;
+  margin-top: 6px;
+  list-style-position: inside;
+  font-size: 25px;
   list-style-type: disc;
+  margin-left: 17px;
 }
 
 /* Responsive styles */
@@ -99,24 +139,73 @@
   .content {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 34px;
+  }
+
+  .skills {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .history {
-    gap: 12px;
+    width: 100%;
+    gap: 9px;
   }
 
+  /* Adjusting skill card layout for small screens */
+  .skillCard {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Adjusting skill image container and text for small screens */
+  .skillImageContainer img {
+    margin-bottom: 12px;
+  }
+
+  .skill p {
+    font-size: 18px;
+  }
+
+  /* Adjusting historyItem layout for small screens */
   .historyItem {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
+  /* Adjusting image for historyItem in small screens */
   .historyItem img {
     margin-bottom: 12px;
   }
 
+  /* Adjusting historyItemDetails for small screens */
   .historyItemDetails ul {
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skillCard {
+    padding: 15px; /* Adjust padding for small screens */
+  }
+
+  .skill p {
+    font-size: 16px; /* Adjust text size for small screens */
+  }
+
+  .historyItem {
+    padding: 15px; /* Adjust padding for very small screens */
+  }
+
+  .historyItemDetails h3 {
+    font-size: 24px; /* Adjust title size */
+  }
+
+  .historyItemDetails p,
+  .historyItemDetails ul {
+    font-size: 16px; /* Adjust text size */
   }
 }

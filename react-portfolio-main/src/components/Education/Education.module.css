@@ -3,9 +3,9 @@
 /* Container styling */
 .container {
   color: var(--color-text);
-  margin: 100px auto; /* Center horizontally and adjust vertical margin */
-  padding: 0 ; /* Add padding for consistent spacing */
-  max-width: 1200px; /* Limit the width for better readability on larger screens */
+  margin-top: 79px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 /* Title styling */
@@ -13,10 +13,9 @@
   color: var(--color-primary);
   font-size: 35px;
   font-weight: 700;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.75px;
   text-transform: uppercase;
-  text-align: left; /* Center the title for better layout balance */
-  margin-bottom: 20px;
+  
 }
 
 /* Content container styling */
@@ -35,33 +34,30 @@
   gap: 20px;
 }
 
-/* Individual education item */
+/* Individual education item styled like history */
 .educationItem {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 20px;
-  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
+  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%); /* Gradient background */
   border-radius: 12px;
-  padding: 20px;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-  transform: perspective(800px) rotateX(0deg) translateY(0px) translateZ(0px); /* Reset to a stable position */
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Softer shadow for a modern look */
+  padding: 24px;
+  transition: box-shadow 0.3s ease; /* Only box-shadow transition */
+  box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.5); /* Softer shadow */
 }
 
 .educationItem:hover {
-  transform: perspective(800px) rotateX(10deg) translateY(-10px) translateZ(10px); /* Add a subtle 3D hover effect */
-  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+  box-shadow: 0px 25px 70px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
 }
 
-
-/* Image in the education item */
+/* Image in the education item styled like history */
 .educationItem img {
-  width: 60px;
-  height: 60px;
+  width: 50px; /* Size adjusted to match history item image size */
+  height: 50px; /* Size adjusted to match history item image size */
   object-fit: cover;
-  border-radius: 50%; /* Make the image circular */
-  background: #ffffff; /* Add a background for contrast */
+  border-radius: 50%; /* Circular image */
+  background: #ffffff; /* Background for contrast */
   padding: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -74,23 +70,23 @@
 }
 
 .educationItemDetails h3 {
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 30px; /* Adjust heading size to match history item */
+  font-weight: 500;
   margin-bottom: 6px;
   color: var(--color-primary-light);
 }
 
 .educationItemDetails p {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 20px; /* Adjust text size to match history item */
+  font-weight: 300;
   margin-bottom: 6px;
   color: var(--color-text-light);
 }
 
 .educationItemDetails ul {
-  margin-top: 10px;
+  margin-top: 6px;
   padding-left: 18px;
-  font-size: 18px;
+  font-size: 25px; /* Adjust font size to match history item */
   font-weight: 300;
   list-style-type: disc;
 }
@@ -119,5 +115,25 @@
 
   .educationItemDetails ul {
     text-align: left;
+  }
+}
+
+/* Further optimization for very small screens */
+@media screen and (max-width: 480px) {
+  .education {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .educationItem {
+    padding: 15px; /* Reduced padding for smaller screens */
+  }
+
+  .educationItemDetails h3 {
+    font-size: 24px; /* Adjust heading size for small screens */
+  }
+
+  .educationItemDetails p,
+  .educationItemDetails ul {
+    font-size: 16px; /* Adjust text size for readability */
   }
 }

@@ -4,7 +4,7 @@
     "organisation": "Inflexion infotech pvt ltd",
     "startDate": "Nov, 2024",
     "endDate": "Present",
-    "experiences": ["Working as fullstack devoloper", ""],
+    "experiences": ["Working as fullstack Java devoloper"],
     "imageSrc": "history/inflexion.png"
   },
   {
@@ -12,7 +12,7 @@
     "organisation": "Kairos technologies",
     "startDate": "March, 2024",
     "endDate": "Jun, 2024",
-    "experiences": ["Worked on Windows 11", "Designed the control panel"],
+    "experiences": ["Spearheaded the development of RESTful APIs utilizing Java and Spring Boot, enhancing client-server communication efficiency", "Orchestrated the implementation of CRUD operations, optimizing data management in MySQL databases.","Collaborated with cross-functional teams to architect scalable software solutions, facilitating seamless integration and scalability."],
     "imageSrc": "history/microsoft.png"
   }
 ]
